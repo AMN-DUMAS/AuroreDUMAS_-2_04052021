@@ -1,0 +1,29 @@
+body {
+    font-family:"Raleway", "Sans-serif" ;
+    margin: 0;
+}
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin:auto;
+    border: solid 1px black;
+}
+
+header img {
+    margin-left: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+    background-color: red ;
+}
+
+
