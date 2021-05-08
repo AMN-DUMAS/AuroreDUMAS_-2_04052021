@@ -10,6 +10,7 @@ header {
     align-items: center;
     margin:auto;
     border: solid 1px black;
+    
 }
 
 header img {
@@ -18,12 +19,14 @@ header img {
 
 nav ul {
     display: flex;
-    list-style: none;
+    list-style-type: none;
 }
 
 nav li {
-    margin-right: 20px;
-    background-color: red ;
+    margin-right: 20px;;
 }
 
 
+.icon {
+    color: #0065FC;
+}
