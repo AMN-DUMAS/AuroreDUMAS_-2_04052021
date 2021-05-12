@@ -20,7 +20,7 @@
     <title>Reservia</title>
 
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Pour tout le monde -->
-    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css"/> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css"/> Pour ceux qui ont une résolution inférieure à 1280px -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,7 +32,8 @@
 <body>
     <!-- header -->
     <header class="header">
-        <a href="#" class="header-logo"></a>
+        <div>
+            <a href="#" class="header-logo"></a>
             <img src="images/logo/Reservia.svg" alt="Logo Reservia">
 
         <nav class="menu">
@@ -42,9 +43,11 @@
                 <li><a href="#search-activities" class="menu-items" title="Activités">Activités</a></li>
             </ul>
 
-                <p><a href="#" title="S'inscrire">S'inscrire</a></p>
+                <p><a href="#" title="S'inscrire"><strong>S'inscrire</strong></a></p>
                
         </nav>
+        </div>
+        
 
     </header>
     <!-- header -->
@@ -85,14 +88,14 @@
                     </span>Animaux autorisés</button>
             </div>
 
+            <p><span class="icon">
+                <i class="fas fa-info-circle"></i>
+                </span>Plus de 500 logements sont disponibles dans cette ville</p>
+
         </section> 
 
         <!-- Section 2 Hébergements à Marseille -->
         <section id="search-lodging" class="lodging">
-
-            <p><span class="icon">
-            <i class="fas fa-info-circle"></i>
-            </span>Plus de 500 logements sont disponibles dans cette ville</p>
 
             <div class="section-container">
 
@@ -105,6 +108,7 @@
                             <a class="badges-link" href="#">
                                 <div class="badges mainbadges">
                                     <div class="mainpic Cannebiere"></div>
+                                    <img src='http://fakeimg.pl/240x115?text=Auberge%20de%20la%20Cannebi%C3%A8re&font=lobster' alt=''/>
                                     <h3>Auberge la Cannebière</h3>
                                     <p>Nuit à partir de <strong>25€</strong></p>
                                     <span class="stars">
@@ -119,6 +123,7 @@
                             <a class="badges-link" href="#">
                                 <div class="badges mainbadges">
                                     <div class="mainpic HotelPort"></div>
+                                    <img src='http://fakeimg.pl/240x115?text=H%C3%B4tel%20du%20Port&font=museo' alt=''/>
                                     <h3>Hôtel du port</h3>
                                     <p>Nuit à partir de <strong>52€</strong></p>
                                     <span class="stars">
@@ -134,6 +139,7 @@
                             <a class="badges-link" href="#">
                                 <div class="badges mainbadges">
                                     <div class="mainpic HotelMouettes"></div>
+                                    <img src='http://fakeimg.pl/240x115?text=H%C3%B4tel%20les%20Mouettes&font=bebas' alt=''/>
                                     <h3>Hôtel Les mouettes</h3>
                                     <p>Nuit à partir de <strong>76€</strong></p>
                                     <span class="stars">
@@ -148,6 +154,7 @@
                             <a class="badges-link" href="#">
                                 <div class="badges mainbadges">
                                     <div class="mainpic HotelMer"></div>
+                                    <img src='http://fakeimg.pl/240x115?text=H%C3%B4tel%20de%20la%20Mer&font=lobster' alt=''/>
                                     <h3>Hôtel de la mer</h3>
                                     <p>Nuit à partir de <strong>46€</strong></p>
                                     <span class="stars">
@@ -161,6 +168,7 @@
                             <a class="badges-link" href="#">
                                 <div class="badges mainbadges">
                                     <div class="mainpic AubergePanier"></div>
+                                    <img src='http://fakeimg.pl/240x115?text=Auberge%20du%20Panier&font=museo' alt=''/>
                                     <h3>Auberge Le Panier</h3>
                                     <p>Nuit à partir de <strong>23€</strong></p>
                                     <span class="stars">
@@ -175,6 +183,7 @@
                             <a class="badges-link" href="#">
                                 <div class="badges mainbadges">
                                     <div class="mainpic HotelAmina"></div>
+                                    <img src='http://fakeimg.pl/240x115?text=H%C3%B4tel%20chez%20Amina&font=bebas' alt=''/>
                                     <h3>Hôtel chez Amina</h3>
                                     <p>Nuit à partir de <strong>96€</strong></p>
                                     <span class="stars">
@@ -202,6 +211,7 @@
                             <div class="badges popularbadges">
                                 <div class="popularpic HotelSoleil"></div>
                                 <div class="badge-name">
+                                    <img src='http://fakeimg.pl/125x130?text=H%C3%B4tel%20Le%20soleil%20du%20matin&font=lobster' alt=''/>
                                     <h3>Hôtel Le soleil du<br>matin</h3>
                                     <p>Nuit à partir de <strong>128€</strong></p>
                                     <span class="stars">
@@ -219,8 +229,9 @@
                             <div class="badges popularbadges">
                                 <div class="popularpic ChambreCoeurEau"></div>
                                 <div class="badge-name">
+                                    <img src='http://fakeimg.pl/125x130?text=Au%20coeur%20de%20leau&font=bebas' alt=''/>
                                     <h3>Au coeur de l'eau<br>Chambres d'hôtes</h3>
-                                    <p>Nuit à partir de <strong>71€</strong></p>
+                                    <p>Nuit à partir de <strong>71€</strong></p>s
                                     <span class="stars">
                                         <i class="fas fa-star fa-xs"></i>
                                         <i class="fas fa-star fa-xs"></i>
@@ -235,6 +246,7 @@
                             <div class="badges popularbadges">
                                 <div class="popularpic HotelBleuBlanc"></div>
                                 <div class="badge-name">
+                                    <img src='http://fakeimg.pl/125x130?text=H%C3%B4tel%20tout%20bleu%20et%20blanc&font=museo' alt=''/>
                                     <h3>Hôtel Tout bleu et<br>Blanc</h3>
                                     <p>Nuit à partir de <strong>68€</strong></p>
                                     <span class="stars">
@@ -264,6 +276,7 @@
                 <a class="activity-link" href="#">
                     <div class="activity-badge">
                         <div class="pic-activity-1"></div>
+                        <img src='http://fakeimg.pl/302x386?text=Vieux%20port&font=lobster' alt=''/>
                         <h3>Vieux Port</h3>
                     </div>
                 </a>
@@ -271,6 +284,7 @@
                 <a class="activity-link" href="#">
                     <div class="activity-badge">
                         <div class="pic-activity-2"></div>
+                        <img src='http://fakeimg.pl/300x175?text=Fort%20de%20Pomegues&font=bebas' alt=''/>
                         <h3>Fort de Pomègues</h3>
                     </div>
                 </a>
@@ -278,6 +292,7 @@
                 <a class="activity-link" href="#">
                     <div class="activity-badge">
                         <div class="pic-activity-3"></div>
+                        <img src='http://fakeimg.pl/300x105?text=Iles%20de%20Frioul&font=museo' alt=''/>
                         <h3>Îles du Frioul</h3>
                     </div>
                 </a>
@@ -285,6 +300,7 @@
                 <a class="activity-link" href="#">
                     <div class="activity-badge">
                         <div class="pic-activity-4"></div>
+                        <img src='http://fakeimg.pl/302x386?text=Parc%20national%20des%20Calanques&font=lobster' alt=''/>
                         <h3>Parc National des Calanques</h3>
                     </div>
                 </a>
@@ -292,6 +308,7 @@
                 <a class="activity-link" href="#">
                     <div class="activity-badge">
                         <div class="pic-activity-5"></div>
+                        <img src='http://fakeimg.pl/300x175?text=Notre%20Dame%20de%20la%20Garde&font=bebas' alt=''/>
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>
                 </a>
@@ -299,6 +316,7 @@
                 <a class="activity-link" href="#">
                     <div class="activity-badge">
                         <div class="pic-activity-6"></div>
+                        <img src='http://fakeimg.pl/300x105?text=Parc%20Longchamps&font=museo' alt=''/>
                         <h3>Parc Longchamp</h3>
                     </div>
                 </a>
