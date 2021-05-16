@@ -1,11 +1,17 @@
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    font-family: 'Raleway', 'sans-serif';
     overflow-x: hidden;
     display: block;
 }
 
 /*Header*/
+
+.header {
+    margin: auto;
+    max-width: 1440px;
+}
 
 .header div {
     display: flex;
@@ -40,13 +46,27 @@ body {
     font-size: 18px;
 }
 
-.menu li a {
+.menu-items {
     color: black;
     text-decoration: none;
     font-size: 18px;
 }
 
-.menu p a {
+.menu-items::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #0065fc;
+    transition: width 0s;
+}
+
+.menu-items:hover::after {
+    width: 100%;
+    transition: width 0s;
+}
+
+.sign-up {
     color: #0065fc;
     text-decoration: none;
     font-weight:bold;
@@ -57,17 +77,99 @@ body {
 
 /* Main */
 
+.main {
+    margin: auto;
+    max-width: 1440px;
+}
+
 .icon {
     color: #0065FC;
 }
 
+/* Section 1 Trouver votre hébergement*/
+
+.catchphrase h2 {
+    margin: 10px 0;
+}
+
+
+.catchphrase p {
+    margin: 10px 0 15px 0 ;
+}
+
+.search-filter {
+    margin: 0 80px 0 55px;
+    padding: 20px 0 20px 0;
+}
+
+.search-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 80px;
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    padding-left: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: .05s;
+}
+
+input[type="text"] {
+    background: #fff;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    border: solid 1px;
+    outline: none;
+    padding: 15px 50px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 280px;
+    
+}
+
+input[type="submit"] {
+    position: relative;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: bold;
+    font-size: 18px;
+    color:#fff;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;   
+    padding: 15px;
+    width: 135px;
+    border: solid 1px;
+    outline: none;
+    cursor: pointer;
+    background: #0065fc ;
+}
+
+input[type="submit"]:hover {
+    background: #cae6e8;
+    color: #0065fc;
+}
+
+/* Section 2 Hébergements à Marseille*/
 .section-container {
     display: flex;
     justify-content: space-between;
     max-height: 630px;
 }
 
+
+filters
+
 /* Hébergements */
+
+.lodging {
+    margin: 0 80px 0 55px;
+    padding: 20px 0 20px 0;
+}
+
 .lodging-container {
     display: flex;
     flex-direction: column;
@@ -77,6 +179,8 @@ body {
     background-color: #f2f2f2;
     border-radius: 15px;
 }
+
+
 
 .lodging-container h2 {
     padding-left: 40px;
@@ -91,19 +195,24 @@ body {
 
 .badges-link{
     margin: 15px 0 20px 0;
+    text-decoration: none;
+    color: black;
 }
 
-
-
-.badges {
+.mainbadges{
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+    padding: 5px 5px 10px 5px;
+    width: 245px;
+    height: 190px;
 }
 
-.mainbadges {
-    padding: 5px 5px 10px 5px;
+
+.badges:hover {
+    box-shadow: none;
 }
+
 
 .badges h3 {
     padding-left: 12px;
@@ -122,7 +231,7 @@ body {
 }
 
 
-.mostpopular {
+.most-popular {
     width: 450px;
     display: flex;
     flex-direction: column;
@@ -133,6 +242,11 @@ body {
     border-radius: 15px;
 }
 
+.most-popular .fa-chart-line {
+    margin-left: 118px;
+
+}
+
 .badges-container
     display: flex;
     flex-wrap: wrap;
@@ -140,9 +254,30 @@ body {
     margin: 10px 0;
 }
 
+.popularbadges {
+    padding: 5px 5px 10px 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+}
+
+.loadmore {
+    margin: 0 80px 0 55px;
+    font-size: 18px;
+}
+
+
 /* Activités */
 
+.activities {
 
+}
 
 
 /* Footer */
