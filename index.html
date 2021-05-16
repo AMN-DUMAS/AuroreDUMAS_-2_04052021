@@ -41,8 +41,9 @@
                 <!-- les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.-->
                 <li><a href="#search-lodging" class="menu-items" title="Hébergements">Hébergements</a></li> 
                 <li><a href="#search-activities" class="menu-items" title="Activités">Activités</a></li>
-                <li><a href="#" class="sign-up" title="S'inscrire"><strong>S'inscrire</strong></a></li>
             </ul>
+
+                <p><a href="#" title="S'inscrire"><strong>S'inscrire</strong></a></p>
                
         </nav>
         </div>
@@ -53,7 +54,7 @@
 
 
     <!-- main -->
-    <main class="main">
+    <main>
         <!-- Section 1 Trouver votre hébergement-->
         <section class="search-filter">
 
@@ -63,34 +64,28 @@
             </div>
 
             <div class="search-bar">
-                
-                <form>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" name="" value="Marseille, France">
-                    <input type="submit" name="" value="Rechercher">
-                </form>
-                    
+                <i class="fas fa-map-marker-alt"></i>
+                <input class="city" type="search" placeholder="Marseille, France">
+                <button class="buttonsearch" type="submit">Rechercher</button>                      
             </div>
         
             <div class="filters">
                 <h3>Filtres</h3>
-                    <div class="button">
-                        <button><span class="icon">
-                        <i class="fas fa-money-bill-wave"></i>
-                        </span>Économique</button>
+                    <button><span class="icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                    </span>Économique</button>
 
-                        <button><span class="icon">
-                        <i class="fas fa-child"></i>
-                        </span>Familial</button>
+                    <button><span class="icon">
+                    <i class="fas fa-child"></i>
+                    </span>Familial</button>
 
-                        <button><span class="icon">
-                        <i class="fas fa-heart"></i>
-                        </span>Romantique</button>
+                    <button><span class="icon">
+                    <i class="fas fa-heart"></i>
+                    </span>Romantique</button>
 
-                        <button><span class="icon">
-                        <i class="fas fa-dog"></i>
-                        </span>Animaux autorisés</button>
-                    </div>
+                    <button><span class="icon">
+                    <i class="fas fa-dog"></i>
+                    </span>Animaux autorisés</button>
             </div>
 
             <p><span class="icon">
@@ -100,7 +95,7 @@
         </section> 
 
         <!-- Section 2 Hébergements à Marseille -->
-        <section class="lodging">
+        <section id="search-lodging" class="lodging">
 
             <div class="section-container">
 
@@ -111,9 +106,9 @@
                         <div class="badges-container">
     
                             <a class="badges-link" href="#">
-                                <div class="mainbadges">
+                                <div class="badges mainbadges">
                                     <div class="mainpic Cannebiere"></div>
-                                    <img src='images/hebergements/4_small/auberge-de-la-cannebiere-small.jpg' alt='chambre avec lits superposés'/>
+                                    <img src='http://fakeimg.pl/240x115?text=Auberge%20de%20la%20Cannebi%C3%A8re&font=lobster' alt=''/>
                                     <h3>Auberge la Cannebière</h3>
                                     <p>Nuit à partir de <strong>25€</strong></p>
                                     <span class="stars">
@@ -126,9 +121,9 @@
                             </a>
     
                             <a class="badges-link" href="#">
-                                <div class="mainbadges">
+                                <div class="badges mainbadges">
                                     <div class="mainpic HotelPort"></div>
-                                    <img src='images/hebergements/4_small/hotel-du-port.jpg' alt='chambre avec deux lits simples'/>
+                                    <img src='http://fakeimg.pl/240x115?text=H%C3%B4tel%20du%20Port&font=museo' alt=''/>
                                     <h3>Hôtel du port</h3>
                                     <p>Nuit à partir de <strong>52€</strong></p>
                                     <span class="stars">
@@ -142,9 +137,9 @@
                             </a>
     
                             <a class="badges-link" href="#">
-                                <div class="mainbadges">
+                                <div class="badges mainbadges">
                                     <div class="mainpic HotelMouettes"></div>
-                                    <img src='images/hebergements/4_small/hotel-des-mouettes.jpg' alt='chambre avec un lit simple'/>
+                                    <img src='http://fakeimg.pl/240x115?text=H%C3%B4tel%20les%20Mouettes&font=bebas' alt=''/>
                                     <h3>Hôtel Les mouettes</h3>
                                     <p>Nuit à partir de <strong>76€</strong></p>
                                     <span class="stars">
@@ -157,9 +152,9 @@
                             </a>
     
                             <a class="badges-link" href="#">
-                                <div class="mainbadges">
+                                <div class="badges mainbadges">
                                     <div class="mainpic HotelMer"></div>
-                                    <img src='images/hebergements/4_small/auberge-de-la-mer.jpg' alt='chambre lit double avec vue sur la mer'/>
+                                    <img src='http://fakeimg.pl/240x115?text=H%C3%B4tel%20de%20la%20Mer&font=lobster' alt=''/>
                                     <h3>Hôtel de la mer</h3>
                                     <p>Nuit à partir de <strong>46€</strong></p>
                                     <span class="stars">
@@ -171,9 +166,9 @@
                             </a>
     
                             <a class="badges-link" href="#">
-                                <div class="mainbadges">
+                                <div class="badges mainbadges">
                                     <div class="mainpic AubergePanier"></div>
-                                    <img src='images/hebergements/4_small/auberge-le-panier.jpg' alt='chambre quatre personnes avec lits superposés'/>
+                                    <img src='http://fakeimg.pl/240x115?text=Auberge%20du%20Panier&font=museo' alt=''/>
                                     <h3>Auberge Le Panier</h3>
                                     <p>Nuit à partir de <strong>23€</strong></p>
                                     <span class="stars">
@@ -186,9 +181,9 @@
                             </a>
     
                             <a class="badges-link" href="#">
-                                <div class="mainbadges">
+                                <div class="badges mainbadges">
                                     <div class="mainpic HotelAmina"></div>
-                                    <img src='images/hebergements/4_small/hotel-chez-amina.jpg' alt='chambre avec deux lits simples'/>
+                                    <img src='http://fakeimg.pl/240x115?text=H%C3%B4tel%20chez%20Amina&font=bebas' alt=''/>
                                     <h3>Hôtel chez Amina</h3>
                                     <p>Nuit à partir de <strong>96€</strong></p>
                                     <span class="stars">
@@ -207,17 +202,16 @@
                     </div>
 
     
-                <div class="most-popular">
-
+                <div class="mostpopular">
                     <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
     
                     <div class="badges-container">
     
                         <a class="badges-link" href="#">
-                            <div class="popularbadges">
+                            <div class="badges popularbadges">
                                 <div class="popularpic HotelSoleil"></div>
                                 <div class="badge-name">
-                                    <img src='images/hebergements/4_small/hotel-le-soleil-du-matin_125x130.jpg' alt=''/>
+                                    <img src='http://fakeimg.pl/125x130?text=H%C3%B4tel%20Le%20soleil%20du%20matin&font=lobster' alt=''/>
                                     <h3>Hôtel Le soleil du<br>matin</h3>
                                     <p>Nuit à partir de <strong>128€</strong></p>
                                     <span class="stars">
@@ -232,10 +226,10 @@
                         </a>
     
                         <a class="badges-link" href="#">
-                            <div class="popularbadges">
+                            <div class="badges popularbadges">
                                 <div class="popularpic ChambreCoeurEau"></div>
                                 <div class="badge-name">
-                                    <img src='images/hebergements/4_small/au-coeur-de-leau-125x130.jpg' alt=''/>
+                                    <img src='http://fakeimg.pl/125x130?text=Au%20coeur%20de%20leau&font=bebas' alt=''/>
                                     <h3>Au coeur de l'eau<br>Chambres d'hôtes</h3>
                                     <p>Nuit à partir de <strong>71€</strong></p>s
                                     <span class="stars">
@@ -249,10 +243,10 @@
                         </a>
     
                         <a class="badges-link" href="#">
-                            <div class="popularbadges">
+                            <div class="badges popularbadges">
                                 <div class="popularpic HotelBleuBlanc"></div>
                                 <div class="badge-name">
-                                    <img src='images/hebergements/4_small/hotel-bleu-blanc_125x130.jpg' alt=''/>
+                                    <img src='http://fakeimg.pl/125x130?text=H%C3%B4tel%20tout%20bleu%20et%20blanc&font=museo' alt=''/>
                                     <h3>Hôtel Tout bleu et<br>Blanc</h3>
                                     <p>Nuit à partir de <strong>68€</strong></p>
                                     <span class="stars">
