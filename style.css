@@ -1,11 +1,18 @@
+
 body {
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    font-family: 'Raleway', 'sans-serif';
     overflow-x: hidden;
     display: block;
 }
 
-/*Header*/
+/*-------------------Header-------------------*/
+
+.header {
+    margin: auto;
+    max-width: 1440px;
+}
 
 .header div {
     display: flex;
@@ -19,14 +26,12 @@ body {
     margin: 10px 60px 0px 55px;
 }
 
-.menu 
-{
+.menu {
     display: flex;
     flex: 1;
     justify-content: flex-end;
     list-style-type: none;
-    margin-top: 20px;
-    margin-right: 80px;
+    margin: 20px 20px 0 0;
 }
 
 .menu ul {
@@ -35,131 +40,553 @@ body {
 }
 
 .menu li {
-    margin-right: 70px;
+    margin-right: 60px;
     font-weight: normal;
     font-size: 18px;
 }
 
-.menu li a {
+.menu-items {
     color: black;
     text-decoration: none;
     font-size: 18px;
 }
 
-.menu p a {
+.menu-items::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #0065fc;
+    transition: width 0s;
+}
+
+.menu-items:hover::after {
+    width: 100%;
+    transition: width 0s;
+}
+
+.sign-up {
     color: #0065fc;
     text-decoration: none;
     font-weight:bold;
     font-size: 18px;
 }
 
+/*-------------------Header-------------------*/
 
 
-/* Main */
+
+
+
+/*-------------------Main-------------------*/
+
+.main {
+    margin: auto;
+    max-width: 1440px;
+}
 
 .icon {
     color: #0065FC;
 }
 
-.section-container {
+.over p {
+    margin: 40px 0 35px 0;
+}
+
+
+/*-------------------Main-------------------*/
+
+
+
+
+
+/*------------------- Section 1 - Début - Trouver votre hébergement-------------------*/
+
+
+/* -------------------Recherche-------------------*/
+
+.catchphrase h1 {
+    margin: 10px 0;
+}
+
+.catchphrase p {
+    margin: 10px 0 15px 0 ;
+}
+
+.search-filter {
+    margin: 0 80px 0 55px;
+    padding: 20px 0 20px 0;
+}
+
+.search-bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 80px;
+}
+
+.city {
+    width: 234px;
+    height: 51px;
+    left: -5px;
+    border: none;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    padding-left: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: .05s;
+}
+
+input[type="text"] {
+    background: #fff;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    border: solid 1px;
+    outline: none;
+    border-radius: none;
+    padding: 15px 50px;
+    width: 280px;
+}
+
+input[type="submit"] {
+    position: relative;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: bold;
+    font-size: 18px;
+    color:#fff;
+    border-top-right-radius: 15px;  
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+    width: 135px;
+    border: solid 1px;
+    outline: none;
+    cursor: pointer;
+    background: #0065fc ;
+    left: -5px
+}
+
+
+input[type="submit"]:hover {
+    background: #cae6e8;
+    color: #0065fc;
+}
+
+.fa-map-marker-alt {
+    padding: 16.5px 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* -------------------Recherche-------------------*/
+
+
+/* -------------------Filtres-------------------*/
+
+.button {
+    display: flex;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.filters h3 {
+    margin-right: 35px;
+    margin-top: 16px;
+}
+
+.filters button {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
+    background: none;
+    padding: 0 20px 0 0;
+    margin-right: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.filters .icon {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin-left: -2px;
+    margin-right: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #deebff;
+    border-radius: 50px;
+    color: #0065fc;
+}
+
+.filters button:hover .icon {
+    color: black;
+    background-color: #deebff;
+}
+
+.filters button:hover {
+    background-color: #0065fc;
+    color: white;
+    border-color: #0065fc;
+}
+
+
+/* -------------------Filtres-------------------*/
+
+
+/*------------------- Section 1 - Fin - Trouver votre hébergement-------------------*/
+
+
+
+
+/*------------------- Section 2 - Début - Hébergement à Marseille-------------------*/
+
+
+/*-------------------Hébergement Début-------------------*/
+
+.results {
+    margin-bottom: 60px;
+}
+
+.results small {
+    font-size: 0.75rem;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.results span {
+    text-align: center;
+}
+
+.lodgingcontainer {
     display: flex;
     justify-content: space-between;
     max-height: 630px;
 }
 
-/* Hébergements */
-.lodging-container {
+.resultscontainer {
     display: flex;
     flex-direction: column;
     max-width: 950px;
-    padding: 40px 0;
     margin-right: 20px;
+    margin-left: 45px;
     background-color: #f2f2f2;
     border-radius: 15px;
 }
 
-.lodging-container h2 {
-    padding-left: 40px;
+.resultscontainer h2 {
+    padding-left: 50px;
+    padding-top: 30px;
 }
 
-.badges-container {
+.cardcontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 10px 0;
 }
 
-.badges-link{
-    margin: 15px 0 20px 0;
+.cardlink {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: black;
 }
 
-
-
-.badges {
+.card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
 }
 
-.mainbadges {
+.maincard {
     padding: 5px 5px 10px 5px;
 }
 
-.badges h3 {
-    padding-left: 12px;
+.card h4 {
+    padding: 10px 0 0 12px;
     margin: 2px 0 0 0;
 }
 
-.badges p {
+.card p {
     font-size: 0.8rem;
     padding-left: 12px;
     margin: 6px 0;
 }
 
-.stars {
+.card .star {
     padding-left: 12px;
     color: #0065fc;
 }
 
+.greystar {
+    color: #f2f2f2;
+}
 
-.mostpopular {
+.fa-info {
+    height: 22px;
+    width: 22px;
+    color: #0065fc;
+    background-color: #deebff;
+    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+    align-items: center;
+    padding-top: 5px;
+    margin-right: 12px;
+}
+
+.mainpic {
+    width: 236px;
+    height: 114px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Cannebiere {
+    background-image: url(images/hebergements/4_small/auberge-de-la-cannebiere-small.jpg);
+}
+
+.Harbor {
+    background-image: url(images/hebergements/4_small/hotel-du-port.jpg);
+}
+
+.Mouettes {
+    background-image: url(images/hebergements/4_small/hotel-des-mouettes.jpg);
+}
+
+.Sea {
+    background-image: url(images/hebergements/4_small/hotel-de-la-mer.jpg);
+}
+
+.Basket {
+    background-image: url(images/hebergements/4_small/auberge-le-panier.jpg);
+}
+
+.Amina {
+    background-image: url(images/hebergements/4_small/hotel-chez-amina.jpg);
+}
+
+.more {
+    font-size: 1.06rem;
+    font-weight: bold;
+    padding-left: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/*-------------------Hébergement Fin-------------------*/
+
+
+/*-------------------Populaire Début-------------------*/
+
+.popular {
     width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 30px;
-    padding: 40px 20px 0 20px;
+    margin-right: 50px;
+    padding: 0 20px 0 20px;
     background-color: #f2f2f2;
     border-radius: 15px;
 }
 
-.badges-container
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 10px 0;
+.popular h2 {
+    padding-top: 30px;
 }
 
-/* Activités */
+.popular .fa-chart-line {
+    margin-left: 95px;
+}
+
+.popular .carcontainer {
+    flex-direction: column;
+}
+
+.popularcard {
+    display: flex;
+    width: 334px;
+    height: 134px;
+    padding: 5px;
+}
+
+.popularpic {
+    width: 127px;
+    height: 134px;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.cardtitle p {
+    margin-bottom: 25%;
+}
+
+/* ----------- ---------- images hébergement ---------- ---------- */
+
+.Sun {
+    background-image: url(images/hebergements/4_small/hotel-soleil-matin_125x130.jpg);
+}
+
+.Water {
+    background-image: url(images/hebergements/4_small/au-coeur-de-leau-125x130.jpg);
+}
+
+.BlueWhite {
+    background-image: url(images/hebergements/4_small/hotel-bleu-blanc_125x130.jpg);
+}
+
+/* ----------- ---------- images hébergement ---------- ---------- */
+
+/*-------------------Populaire Fin-------------------*/
+
+
+/*------------------- Section 2 - Fin - Hébergement à Marseille-------------------*/
 
 
 
 
-/* Footer */
+
+/*------------------- Section 3 - Début- Activités-------------------*/
+
+.activities {
+    margin: 0 55px 62px 55px;
+}
+
+.activitycontent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 446px;
+    margin-top: 24px;
+}
+
+.activitycard {
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+}
+
+.activitypic {
+    width: 302px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.activitycard h4 {
+    padding: 17px 22px;
+    margin: 0;
+}
+
+.activitycard:hover {
+    box-shadow: none;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover 
+{
+    color: #0065fc;
+}
+
+/* ----------- ---------- images activités ---------- ---------- */
+.OldHarbor {
+    background-image: url(images/activites/3_medium/vieux-port.jpg);
+    height: 395px;
+}
+
+.Pomegues {
+    background-image: url(images/activites/3_medium/fort-pomegues.jpg);
+    height: 180px;
+}
+
+.Frioul {
+    background-image: url(images/activites/3_medium/ile-frioul.jpg);
+    height: 110px;
+}
+
+.Calanques {
+    background-image: url(images/activites/3_medium/calanques.jpg);
+    height: 395px;
+}
+
+.Garde {
+    background-image: url(images/activites/3_medium/notre-dame-de-la-garde.jpg);
+    height: 140px;
+}
+
+.LongChamp {
+    background-image: url(images/activites/3_medium/-parc-longchamp.jpg);
+    height: 155px;
+}
+
+/*------------------- Section 3 - Fin- Activités-------------------*/
+
+
+
+
+
+/*-------------------Footer Début-------------------*/
+
 .footer {
-    width: 100%;
+    margin: auto;
     background-color: #f2f2f2;
 }
 
 .footercontent {
+    display: flex;
     max-width: 1350px;
     margin: auto;
-    display: flex;
+    padding-left: 20px;
 }
 
 .footercontent div {
-    margin-right: 150px;
-    padding-bottom: 50px;
+    margin-right: 2px;
+    padding-bottom: 55px;
+    margin-right: 250px;
 }
 
 .footer h3 {
@@ -190,4 +617,4 @@ body {
     font-weight: bold;
 }
 
-
+/*-------------------Footer Fin-------------------*/
