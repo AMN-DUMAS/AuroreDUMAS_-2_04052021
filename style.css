@@ -8,7 +8,6 @@ body {
 }
 
 /*-------------------Header-------------------*/
-
 .header {
     margin: auto;
     max-width: 1440px;
@@ -32,6 +31,7 @@ body {
     justify-content: flex-end;
     list-style-type: none;
     margin: 20px 20px 0 0;
+    padding-right: 30px;
 }
 
 .menu ul {
@@ -40,10 +40,12 @@ body {
 }
 
 .menu li {
+    display: flex;
     margin-right: 60px;
     font-weight: normal;
     font-size: 18px;
 }
+
 
 .menu-items {
     color: black;
@@ -71,7 +73,6 @@ body {
     font-weight:bold;
     font-size: 18px;
 }
-
 /*-------------------Header-------------------*/
 
 
@@ -79,7 +80,6 @@ body {
 
 
 /*-------------------Main-------------------*/
-
 .main {
     margin: auto;
     max-width: 1440px;
@@ -92,19 +92,11 @@ body {
 .over p {
     margin: 40px 0 35px 0;
 }
-
-
 /*-------------------Main-------------------*/
 
 
-
-
-
 /*------------------- Section 1 - Début - Trouver votre hébergement-------------------*/
-
-
 /* -------------------Recherche-------------------*/
-
 .catchphrase h1 {
     margin: 10px 0;
 }
@@ -116,6 +108,10 @@ body {
 .search-filter {
     margin: 0 80px 0 55px;
     padding: 20px 0 20px 0;
+}
+
+.search-filter p {
+    font-size: 16px;
 }
 
 .search-bar {
@@ -138,7 +134,7 @@ body {
     text-decoration: none;
 }
 
-input{
+input {
     position: relative;
     display: inline-block;
     padding-left: 40px;
@@ -155,7 +151,6 @@ input[type="text"] {
     color: black;
     border: solid 1px;
     outline: none;
-    border-radius: none;
     padding: 15px 50px;
     width: 280px;
 }
@@ -250,68 +245,75 @@ input[type="submit"]:hover {
     color: white;
     border-color: #0065fc;
 }
-
-
 /* -------------------Filtres-------------------*/
-
-
 /*------------------- Section 1 - Fin - Trouver votre hébergement-------------------*/
 
 
 
 
+
 /*------------------- Section 2 - Début - Hébergement à Marseille-------------------*/
-
-
-/*-------------------Hébergement Début-------------------*/
-
+/* -------------------Hébergement début-------------------*/
 .results {
-    margin-bottom: 60px;
+    margin: 0 30px 60px 50px;
 }
+
 
 .results small {
-    font-size: 0.75rem;
-    margin-bottom: 35px;
     display: flex;
     align-items: center;
+    font-size: 16px;
+    margin-bottom: 35px;
 }
+
 
 .results span {
     text-align: center;
+    padding-left: 50px;
 }
 
-.lodgingcontainer {
+.fa-info {
+    height: 20px;
+    width: 25px;
+    color: #0065fc;
+    background-color: #deebff;
+    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+    align-items: center;
+    padding-top: 5px;
+    margin-right: 12px;
+}
+
+.lodgingcontainer{
     display: flex;
     justify-content: space-between;
-    max-height: 630px;
+    max-height: 640px;
+    margin-left: 50px;
+    margin-top: 50px;   
 }
 
 .resultscontainer {
     display: flex;
     flex-direction: column;
     max-width: 950px;
-    margin-right: 20px;
-    margin-left: 45px;
+    padding-top: 20px;
     background-color: #f2f2f2;
     border-radius: 15px;
+    margin-right: 30px;
 }
 
 .resultscontainer h2 {
-    padding-left: 50px;
-    padding-top: 30px;
+    padding-left: 50px; 
 }
 
 .cardcontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 10px 0;
 }
 
 .cardlink {
-    margin-bottom: 30px;
-    text-decoration: none;
-    color: black;
+    margin: 15px 0 20px 0;
 }
 
 .card {
@@ -325,35 +327,25 @@ input[type="submit"]:hover {
 }
 
 .card h4 {
-    padding: 10px 0 0 12px;
+    padding-left: 12px;
+    padding-top: 5px;
     margin: 2px 0 0 0;
 }
 
 .card p {
-    font-size: 0.8rem;
+    font-size: 13px;
     padding-left: 12px;
     margin: 6px 0;
 }
 
-.card .star {
+.card .stars {
     padding-left: 12px;
     color: #0065fc;
 }
 
-.greystar {
+.greystar 
+{
     color: #f2f2f2;
-}
-
-.fa-info {
-    height: 22px;
-    width: 22px;
-    color: #0065fc;
-    background-color: #deebff;
-    border: 1px solid #f2f2f2;
-    border-radius: 50px;
-    align-items: center;
-    padding-top: 5px;
-    margin-right: 12px;
 }
 
 .mainpic {
@@ -365,6 +357,14 @@ input[type="submit"]:hover {
     border-top-right-radius: 10px;
 }
 
+.loadmore {
+    font-size: 1.06rem;
+    font-weight: bold;
+    padding: 20px 0 20px 40px;
+}
+
+/* -------------------images Hébergement-------------------*/
+
 .Cannebiere {
     background-image: url(images/hebergements/4_small/auberge-de-la-cannebiere-small.jpg);
 }
@@ -373,7 +373,7 @@ input[type="submit"]:hover {
     background-image: url(images/hebergements/4_small/hotel-du-port.jpg);
 }
 
-.Mouettes {
+.Seagull {
     background-image: url(images/hebergements/4_small/hotel-des-mouettes.jpg);
 }
 
@@ -389,40 +389,29 @@ input[type="submit"]:hover {
     background-image: url(images/hebergements/4_small/hotel-chez-amina.jpg);
 }
 
-.more {
-    font-size: 1.06rem;
-    font-weight: bold;
-    padding-left: 50px;
-    text-decoration: none;
-    color: black;
-}
+/* -------------------Hébergement fin -------------------*/
 
 
-/*-------------------Hébergement Fin-------------------*/
 
 
-/*-------------------Populaire Début-------------------*/
-
+/* -------------------Populaire Début -------------------*/
 .popular {
     width: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 30px;
     margin-right: 50px;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 20px 20px;
     background-color: #f2f2f2;
     border-radius: 15px;
 }
 
-.popular h2 {
-    padding-top: 30px;
-}
-
 .popular .fa-chart-line {
-    margin-left: 95px;
+    margin-left: 80px;
 }
 
-.popular .carcontainer {
+.popular .cardcontainer {
     flex-direction: column;
 }
 
@@ -446,29 +435,23 @@ input[type="submit"]:hover {
     box-shadow: none;
 }
 
-.cardtitle p {
+.cardname p {
     margin-bottom: 25%;
 }
 
-/* ----------- ---------- images hébergement ---------- ---------- */
-
+/* -------------------images populaire-------------------*/
 .Sun {
-    background-image: url(images/hebergements/4_small/hotel-soleil-matin_125x130.jpg);
+    background-image: url(images/hebergements/4_small/hotel-le-soleil-du-matin.jpg);
 }
 
 .Water {
-    background-image: url(images/hebergements/4_small/au-coeur-de-leau-125x130.jpg);
+    background-image: url(images/hebergements/4_small/au-coeur-de-leau.jpg);
 }
 
 .BlueWhite {
-    background-image: url(images/hebergements/4_small/hotel-bleu-blanc_125x130.jpg);
+    background-image: url(images/hebergements/4_small/hotel-bleu-blanc.jpg);
 }
-
-/* ----------- ---------- images hébergement ---------- ---------- */
-
-/*-------------------Populaire Fin-------------------*/
-
-
+/* -------------------Populaire Fin-------------------*/
 /*------------------- Section 2 - Fin - Hébergement à Marseille-------------------*/
 
 
@@ -476,7 +459,6 @@ input[type="submit"]:hover {
 
 
 /*------------------- Section 3 - Début- Activités-------------------*/
-
 .activities {
     margin: 0 55px 62px 55px;
 }
@@ -618,3 +600,14 @@ a:hover
 }
 
 /*-------------------Footer Fin-------------------*/
+
+
+/******************************Responsive Début******************************/
+
+/*--  maxwidth (desktop-first), si l'écran est inférieur ou égal alors...--*/
+/*--all, print, screen, speech--*/
+
+
+
+
+/******************************Responsive Fin******************************/
