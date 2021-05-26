@@ -269,7 +269,6 @@ input[type="submit"]:hover {
 
 .results span {
     text-align: center;
-    padding-left: 50px;
 }
 
 .fa-info {
@@ -287,15 +286,12 @@ input[type="submit"]:hover {
 .lodgingcontainer{
     display: flex;
     justify-content: space-between;
-    max-height: 640px;
-    margin-left: 50px;
     margin-top: 50px;   
 }
 
 .resultscontainer {
     display: flex;
     flex-direction: column;
-    max-width: 950px;
     padding-top: 20px;
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -606,6 +602,7 @@ a:hover
 
 /*--  maxwidth (desktop-first), si l'écran est inférieur ou égal alors...--*/
 /*--all, print, screen, speech--*/
+
 
 
 
