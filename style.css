@@ -255,7 +255,7 @@ input[type="submit"]:hover {
 /*------------------- Section 2 - Début - Hébergement à Marseille-------------------*/
 /* -------------------Hébergement début-------------------*/
 .results {
-    margin: 0 30px 60px 50px;
+    margin: 0 30px 60px 0px;
 }
 
 
@@ -264,6 +264,7 @@ input[type="submit"]:hover {
     align-items: center;
     font-size: 16px;
     margin-bottom: 35px;
+    margin-left: 50px;
 }
 
 
@@ -296,6 +297,7 @@ input[type="submit"]:hover {
     background-color: #f2f2f2;
     border-radius: 15px;
     margin-right: 30px;
+    margin-left: 50px;
 }
 
 .resultscontainer h2 {
