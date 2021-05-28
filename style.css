@@ -117,21 +117,20 @@ body {
     font-size: 16px;
 }
 
-.search-bar 
-{
+.search-bar {
     display: flex;
     margin-bottom: 3%;
 }
-.fa-map-marker-alt 
-{
+
+.fa-map-marker-alt {
     padding: 16.5px 10px;
     background-color: #f2f2f2;
     border: 1px solid #f2f2f2;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-.city 
-{
+
+.city {
     width: 234px;
     height: 51px;
     border: none;
@@ -143,8 +142,8 @@ body {
     list-style-type: none;
     text-decoration: none;
 }
-.btnsearch 
-{
+
+.btnsearch {
     display: block;    
     height: 51px;
     text-align: center;
@@ -166,13 +165,12 @@ body {
 
 
 
-.fa-search
-{
+.fa-search {
     visibility: hidden;
     display: none;
 }
-.btnsearch:hover 
-{
+
+.btnsearch:hover {
     color: #0065fc;
     background-color: #deebff;
     border: 1px solid #0065fc;
@@ -305,6 +303,7 @@ body {
 
 .cardlink {
     margin: 15px 0 20px 0;
+    padding: 5px;
 }
 
 .card {
@@ -486,6 +485,11 @@ body {
     box-shadow: none;
 }
 
+.activitylink {
+    padding: 10px;
+
+}
+
 h4 {
     font-size: 1rem;
     font-weight: bold;
@@ -598,8 +602,7 @@ a:hover
 /*--  maxwidth (desktop-first), si l'écran est inférieur ou égal alors...--*/
 /*--all, print, screen, speech--*/
 
-
-
+/*-- Version
 
 
 /******************************Responsive Fin******************************/
