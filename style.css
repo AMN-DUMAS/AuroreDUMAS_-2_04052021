@@ -450,7 +450,9 @@ body {
 
 /*------------------- Section 3 - Début- Activités-------------------*/
 .activities {
-    margin: 0 80px 62px 55px;
+        margin-bottom: 62px ;
+        padding: 0 70px 0 50px;
+    
 }
 
 .activitycontent {
