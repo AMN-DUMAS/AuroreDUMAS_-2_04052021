@@ -450,9 +450,8 @@ body {
 
 /*------------------- Section 3 - Début- Activités-------------------*/
 .activities {
-        margin-bottom: 62px ;
-        padding: 0 70px 0 50px;
-    
+    margin-bottom: 62px ;
+    padding: 0 70px 0 50px;
 }
 
 .activitycontent {
@@ -604,7 +603,131 @@ a:hover
 /*--  maxwidth (desktop-first), si l'écran est inférieur ou égal alors...--*/
 /*--all, print, screen, speech--*/
 
-/*-- Version
+/******************************Premier Breakpoint******************************/
+
+@media all and ( max-width: 1351px) {
+
+    /*-- Trouvez votre hébergement --*/
+
+    .catchphrase h1 {
+        text-align: center
+    }
+
+    .catchphrase p {
+        text-align: center
+    }
+
+    .search-bar {
+        margin: 40px 0 40px 0;
+        justify-content: center;
+    }
+    
+    /*-- Hébergement Marseille --*/
+
+    .lodgingcontainer {
+    
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0 50px 0;
+        flex-direction: column-reverse;
+        max-height: none;
+    }
+
+    .resultscontainer {    
+        max-height: none;
+        margin: 50px;
+        background-color: transparent;
+        justify-content: space-around;
+        align-self: center;
+    }
+
+    .resultscontainer h2 {
+        padding-left: 30px;
+    }
+
+    .resultscontainer .cardcontainer { 
+
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .maincard {
+        width: 350px;
+        height: 200px;
+    }
+
+    .mainpic {
+        width: 348px;
+        height: 130px;
+    }
+        
+
+
+    /*-- Les plus populaire --*/
+
+
+    .popular {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        align-items: center;
+    }
+
+    .popular .cardcontainer {
+            flex-direction: row;
+            margin-right: 50px;
+    }
+
+    .popularcard {
+        width: 400px;
+    }
+
+
+    /*-- Activités --*/
+
+    .activities h2 {
+        padding-left: 60px
+    }
+
+    .activitycontent {
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .activitycontent {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    
+    .activitypic {
+        width: 324px;
+        height: 134px 
+    }
+        
+    /*-- Footer --*/
+    
+    .footercontent {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/******************************Second Breakpoint******************************/
+
+@media all and ( max-width: 1339px) { 
+
+    .popular .cardcontainer {
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
 
 
 /******************************Responsive Fin******************************/
