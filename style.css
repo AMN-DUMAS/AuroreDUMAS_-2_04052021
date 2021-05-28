@@ -193,6 +193,7 @@ input[type="submit"]:hover {
 
 .button {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .filters {
