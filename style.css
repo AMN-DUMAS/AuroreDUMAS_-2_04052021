@@ -292,7 +292,7 @@ body {
 }
 
 .resultscontainer h2 {
-    padding-left: 50px; 
+    padding-left: 30px; 
 }
 
 .cardcontainer {
@@ -619,9 +619,6 @@ a:hover
         align-self: center;
     }
 
-    .resultscontainer h2 {
-        padding-left: 30px;
-    }
 
     .resultscontainer .cardcontainer { 
 
@@ -661,6 +658,10 @@ a:hover
         width: 400px;
     }
 
+    .popular h2 {
+        text-align: center;
+        margin-right: 55px;
+    }
 
     /*-- Activités --*/
 
@@ -690,15 +691,21 @@ a:hover
 
 /******************************Second Breakpoint******************************/
 
+    /*-- Hébergement Marseille --*/
+
 @media all and ( max-width: 1280px) {
+
 
     .resultscontainer h2 {
     text-align: center;
+    padding-left: 0px;
     }
 
     .loadmore {
-    padding-left: 110px;
+    text-align: center
     }
+
+    /*-- Activités --*/
 
     .activities h2 {
     text-align: center;
@@ -706,12 +713,5 @@ a:hover
 
 }
 
+/******************************3éme Breakpoint******************************/
 
-
-
-
-
-
-
-
-/******************************Responsive Fin******************************/
