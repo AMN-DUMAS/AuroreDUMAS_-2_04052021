@@ -550,50 +550,28 @@ a:hover
 /*-------------------Footer Début-------------------*/
 
 .footer {
-    margin: auto;
-    background-color: #f2f2f2;
-}
-
-.footercontent {
+    background-color: #F2F2F2;
+    width: 100%;
+  }
+  .footercontent {
     display: flex;
-    max-width: 1350px;
+    max-width: 100%;
+    width: 1440px;
     margin: auto;
-    padding-left: 20px;
-}
-
-.footercontent div {
-    margin-right: 2px;
-    padding-bottom: 55px;
-    margin-right: 250px;
-}
-
-.footer h3 {
-    padding: 45px 0 10px 0;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer ul li {
-    font-size: 1rem;
-    padding: 10px 0;
-}
-
-.footer ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.footer ul li a:hover {
-    color: #0065fc;
-}
-
-.h3 {
-    font-size: 1.06rem;
-    font-weight: bold;
-}
+    padding: 0 32px;
+    box-sizing: border-box;
+  }
+  .footerdiv {
+    width: 30%;
+    padding: 32px 32px;
+  }
+  .footerlink {
+    display: block;
+    margin: 16px 0;
+  }
+  .footerlink:hover {
+    text-decoration: solid;
+  }
 
 /*-------------------Footer Fin-------------------*/
 
@@ -675,7 +653,7 @@ a:hover
     }
 
     .popular .cardcontainer {
-            flex-direction: row;
+            flex-direction: column;
             margin-right: 50px;
     }
 
@@ -707,22 +685,28 @@ a:hover
     }
         
     /*-- Footer --*/
-    
-    .footercontent {
-        width: 100%;
-        justify-content: center;
-    }
+
 }
 
 /******************************Second Breakpoint******************************/
 
-@media all and ( max-width: 1339px) { 
+@media all and ( max-width: 1280px) {
 
-    .popular .cardcontainer {
-        flex-direction: column;
+    .resultscontainer h2 {
+    text-align: center;
+    }
+
+    .loadmore {
+    padding-left: 110px;
+    }
+
+    .activities h2 {
+    text-align: center;
     }
 
 }
+
+
 
 
 
