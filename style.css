@@ -702,7 +702,7 @@ a:hover
     }
 
     .loadmore {
-    text-align: center
+    text-align: center;
     padding-left: 0px;
     }
 
@@ -712,5 +712,16 @@ a:hover
     text-align: center;
     padding-left: 0px;
     }
+}
 
+/******************************3éme Breakpoint******************************/
+
+/*-- Trouvez votre hébergement --*/
+
+@media all and ( max-width: 995px) {
+
+    .filters button {
+        margin-bottom: 15px;
+    }
+    /******************************Responsive Fin******************************/
 }
