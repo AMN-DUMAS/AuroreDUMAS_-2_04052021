@@ -585,7 +585,7 @@ a:hover
 
 @media all and ( max-width: 1351px) {
 
-    /*-- Trouvez votre hébergement --*/
+/*-- Trouvez votre hébergement --*/
 
     .catchphrase h1 {
         text-align: center
@@ -600,7 +600,7 @@ a:hover
         justify-content: center;
     }
     
-    /*-- Hébergement Marseille --*/
+/*-- Hébergement Marseille --*/
 
     .lodgingcontainer {
     
@@ -639,7 +639,7 @@ a:hover
         
 
 
-    /*-- Les plus populaire --*/
+/*-- Les plus populaire --*/
 
 
     .popular {
@@ -663,7 +663,7 @@ a:hover
         margin-right: 55px;
     }
 
-    /*-- Activités --*/
+/*-- Activités --*/
 
     .activities h2 {
         padding-left: 60px
@@ -691,7 +691,7 @@ a:hover
 
 /******************************Second Breakpoint******************************/
 
-    /*-- Hébergement Marseille --*/
+/*-- Hébergement Marseille --*/
 
 @media all and ( max-width: 1280px) {
 
@@ -703,15 +703,14 @@ a:hover
 
     .loadmore {
     text-align: center
+    padding-left: 0px;
     }
 
-    /*-- Activités --*/
+/*-- Activités --*/
 
     .activities h2 {
     text-align: center;
+    padding-left: 0px;
     }
 
 }
-
-/******************************3éme Breakpoint******************************/
-
