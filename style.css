@@ -650,16 +650,23 @@ a:hover
     }
 
     .popular .cardcontainer {
-            flex-direction: column;
+            flex-direction: row;
             margin-right: 50px;
     }
 
     .popularcard {
-        width: 400px;
+        width: 350px;;
+    }
+
+    .cardlink {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .popular h2 {
-        text-align: center;
+        width: 1190px;
+        padding-left: 50px;
+        text-align: left;
         margin-right: 55px;
     }
 
@@ -691,10 +698,11 @@ a:hover
 
 /******************************Second Breakpoint******************************/
 
+
+
+@media all and ( max-width: 1296px) {
+
 /*-- Hébergement Marseille --*/
-
-@media all and ( max-width: 1280px) {
-
 
     .resultscontainer h2 {
     text-align: center;
@@ -706,22 +714,59 @@ a:hover
     padding-left: 0px;
     }
 
+/*-- Populaire --*/
+
+
+    .popular h2 {
+        width: 1190px;
+        padding-left: 0px;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .popularcard {
+        width: 300px;;
+    }
+
 /*-- Activités --*/
 
     .activities h2 {
     text-align: center;
     padding-left: 0px;
     }
+    
 }
 
 /******************************3éme Breakpoint******************************/
 
+@media all and ( max-width: 1146px) {
+
+/*-- Populaire --*/
+
+    .popular .cardcontainer {
+        flex-direction: column;
+        margin-right: 50px;
+    }
+
+    .popularcard {
+        width: 650px;
+        height: 200px;
+    }
+
+    .popularpic {
+        width: 450px;
+        height: 190px;
+    }
+}
+/******************************4éme Breakpoint******************************/
+
 /*-- Trouvez votre hébergement --*/
 
-@media all and ( max-width: 995px) {
+@media all and ( max-width: 1012px) {
 
     .filters button {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
+
     /******************************Responsive Fin******************************/
 }
