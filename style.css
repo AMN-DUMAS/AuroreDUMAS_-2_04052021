@@ -132,6 +132,7 @@ body {
     font-weight: 700;
     list-style-type: none;
     text-decoration: none;
+    border-radius: 0%;
 }
 
 .btnsearch {
@@ -1129,6 +1130,16 @@ body {
         padding-top: 20px;
     }
 
+/*-- Trouver Hébergement--*/
+
+    .search-filter {
+        margin-left: 30px;
+    }
+
+    .results small {
+        margin-left: 30px;
+    }
+    
 /*-- Activities --*/
     .activities {
         padding-left: 30px;
