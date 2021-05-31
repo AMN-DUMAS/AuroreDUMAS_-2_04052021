@@ -788,11 +788,20 @@ a:hover
 
 /******************************6ème Breakpoint******************************/
 
+/*-- Activités --*/
 
+@media all and ( max-width: 844px) {
 
+    .activitycard {
+        width: 600px;
+        height: 300px;
+    }
 
-
-
+    .activitypic {
+        width: 599Px;
+        height: 250px;
+    }
+}
 
 
 
