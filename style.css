@@ -341,6 +341,12 @@ body {
     font-size: 1.06rem;
     font-weight: bold;
     padding: 20px 0 20px 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.loadmore :hover {
+    color: #0065fc;
 }
 
 /* -------------------images Hébergement-------------------*/
@@ -603,6 +609,7 @@ body {
 /*--  maxwidth (desktop-first), si l'écran est inférieur ou égal alors...--*/
 /*--all, print, screen, speech--*/
 
+
 /******************************Premier Breakpoint******************************/
 
 @media all and ( max-width: 1351px) {
@@ -659,6 +666,10 @@ body {
         height: 130px;
     }
         
+    .loadmore {
+        text-align: center;
+        padding-left: 0px;
+        }
 
 
 /*-- Les plus populaire --*/
@@ -729,10 +740,6 @@ body {
     padding-left: 0px;
     }
 
-    .loadmore {
-    text-align: center;
-    padding-left: 0px;
-    }
 
 /*-- Populaire --*/
 
@@ -948,8 +955,57 @@ body {
     .footerdiv h3 {
         margin: 10px 0 10px 0;
     }
+}
 
-/******************************       ******************************/
+/******************************8ème Breakpoint******************************/
 
+@media all and ( max-width: 768px) {
 
-    /******************************Responsive Fin******************************/
+/*-- Populaire --*/
+
+.popularcard {
+    width: 335px;
+    height: 145px;
+    }
+
+.popularpic {
+    width: 130px;
+    height: 130px;
+    }
+
+/*-- Hébergement Marseille--*/
+
+    .maincard {
+        width: 330px;
+        height: 195px;
+    }
+
+    .mainpic {
+        width: 329px;
+        height: 120px;
+    }
+
+   .cardlink {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+/*-- Activités--*/
+
+    .activitycard {
+        width: 335px;
+        height: 195px;
+    }
+
+    .activitypic {
+        width: 335px;
+        height: 135px;
+    }
+
+/*-- Footer--*/
+    .footerdiv {
+        width: 60%;
+    }
+}
+
+/******************************Responsive Fin******************************/
