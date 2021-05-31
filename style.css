@@ -132,7 +132,11 @@ body {
     font-weight: 700;
     list-style-type: none;
     text-decoration: none;
-    border-radius: 0%;
+}
+
+
+.city[type="search"] {
+	-webkit-appearance: none;
 }
 
 .btnsearch {
@@ -528,7 +532,7 @@ body {
 /* ----------- ---------- images activités ---------- ---------- */
 .OldHarbor {
     background-image: url(images/activites/3_medium/vieux-port.jpg);
-    height: 395px;
+    height: 375px;
 }
 
 .Pomegues {
@@ -543,7 +547,7 @@ body {
 
 .Calanques {
     background-image: url(images/activites/3_medium/calanques.jpg);
-    height: 395px;
+    height: 375px;
 }
 
 .Garde {
@@ -1130,16 +1134,6 @@ body {
         padding-top: 20px;
     }
 
-/*-- Trouver Hébergement--*/
-
-    .search-filter {
-        margin-left: 30px;
-    }
-
-    .results small {
-        margin-left: 30px;
-    }
-    
 /*-- Activities --*/
     .activities {
         padding-left: 30px;
