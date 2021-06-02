@@ -673,7 +673,7 @@ body {
     }
 
 
-/*-- populaire --*/
+/*-- Populaire --*/
 
     .popular {
         width: 100%;
@@ -705,55 +705,136 @@ body {
 
 
 
-/******************************Tablette Breakpoint******************************/
-@media all and ( max-width: 822px) {
+/******************************4ème Breakpoint******************************/
+@media all and ( max-width: 914px) {
 
-}
+/*-- Hébergement Marseille --*/
+
+    .resultscontainer {
+    /*-- background-color: transparent; --*/
+    }
+
+    .cardlink-lodging {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mainpic {
+        width: 342px;
+    }
+
+
+/******************************Tablette Breakpoint******************************/
+@media all and ( max-width: 853px) {
     
+/*-- Hébergement Marseille --*/
+
+        .resultscontainer {
+        /*-- background-color: transparent; --*/
+        }
+    
+        .cardlink-lodging {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .maincard {
+            width: 100%;
+        }
+
+        .cardlink-lodging {
+            width: 70%;
+            height: 270px;
+        }
+
+        .mainpic {
+           width: 100%;
+           height: 160px;
+        }
+
+        .maincard h4 {
+            font-size: 20px;
+        }
+
+        .maincard p {
+            font-size: 16px;
+        }
+
+/*-- Populaire --*/
+
+        .popular .cardcontainer {
+            flex-direction: column;
+            margin-left:50px;
+        }
+        
+        .cardlink-popular {
+            width: 90%
+        }
+
+        .cardlink-popular h4 {
+            font-size: 20px;
+        }
+
+        .cardlink-popular p {
+            font-size: 16px;
+            margin-bottom: 20px
+        }
+
+        .cardname {
+            margin-left: 30px;
+        }
+
+        .stars {
+            font-size: 20px;
+        }
+
+        .popularpic {
+            width: 50%;
+        }
+        
+/*-- Activités --*/
+
+        .activitylink {
+            width: 70%;
+        }
+        
+        .activitycard {
+            height: 300px;
+        }
+
+        .activitypic {
+            width: 100%;
+            height: 250px;
+         }
+
+/*-- Footer--*/
+
+         .footercontent {
+             flex-direction: column;
+         }
+
+         .footerdiv {
+             padding: 10px;
+         }
+        
+        .footertitle {
+            font-size: 18px;
+            margin: 0 5px 10px 0;
+        }
+
+        .footerlink {
+            margin: 5px 0 5px 0;
+            font-size: 16px;
+        }
+
+
+
 
 /****************************** Iphone Breakpoint******************************/
-@media all and ( max-width: 320px) {
+@media all and ( max-width: 576px) {
+    
 
-    /*-- Header--*/
     
-        .header img {
-            margin-left: 25px;
-        }
-    
-        .menu ul {
-            padding-top: 10px
-        }
-    
-        .sign-up {
-            padding-top: 20px;
-        }
+}
 
-    /*-- Hébergement Marseille-*/
-
-    .lodgingcontainer {
-        width: 400px;
-    }
-    
-    .resultscontainer{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    /*-- Activities --*/
-        .activities {
-            padding-right: 0px;
-            padding-left: 0px;
-        }
-    
-        .activities h2{
-            margin-left: 20px;
-            padding-left: 0px;
-        }
-    
-    /*-- Footer--*/
-    
-        .footercontent {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
+   
