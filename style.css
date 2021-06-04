@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', 'sans-serif';
-    overflow-x: hidden;
     display: block;
 }
 
@@ -134,6 +133,8 @@ body {
     list-style-type: none;
     text-decoration: none;
 }
+
+
 
 .city[type="search"] {
 	-webkit-appearance: none;
@@ -855,7 +856,7 @@ body {
 }
 
 
-/****************************** Bootstrap Breakpoint******************************/
+/****************************** Other Breakpoint******************************/
 @media all and ( max-width: 685px) {
     /*-- header --*/
     
@@ -865,8 +866,20 @@ body {
         flex-wrap: wrap;
     }
 
+    .header div {
+        border: solid 3px red;
+        width: 450px;
+    }
+    
+    .header img {
+        margin-left: 0px;
+        margin-right: 0px
+    }
+
     .menu {
         margin-right: 0px;
+        margin-left:300px;
+        
     }
 
     .menu nav {
@@ -874,6 +887,7 @@ body {
         flex-basis: 100%;
         order: 2;
         display: flex;
+        border:solid 5px hotpink;
     }
 
     .menu ul {
@@ -881,8 +895,12 @@ body {
         order: 2;
         position: relative;
         top: 50px;
-        right: 160px;
+        right: 450px;
         padding-top: 30px;    
+        padding-left: 0px;
+        margin-left: 50px;
+        border: solid 2px greenyellow;
+        width: 450px
     }
     
     .menu li {
@@ -890,13 +908,17 @@ body {
     }
 
     .menu-items {
+        display: flex;
+        justify-content: space-evenly;
         border-bottom: 3px solid #f2f2f2;
         padding-bottom: 20px;
+        padding-right: 100px;
     }
 
     .menu-items:hover {
         border-bottom-color: #0065FC;
     }
+
 
     .sign-up {
         position: absolute;
@@ -907,8 +929,9 @@ body {
         color: #0065fc;
         text-decoration: none;
         width: 165px;
-        transition: all 0.4s;
-        right: -50px;
+        right: 45px;
+        margin-right: 80px;
+        width:80px        
     }
         
 /*-- Main --*/
