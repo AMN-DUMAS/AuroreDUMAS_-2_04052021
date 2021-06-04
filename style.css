@@ -22,7 +22,6 @@ body {
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    margin: auto;
 }
 
 .header img {
@@ -62,16 +61,17 @@ body {
 
 
 .sign-up {
-    padding-top: 16px;
-}
-
-.sign-up {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 16px;
     color: #0065fc;
     text-decoration: none;
     font-weight:bold;
     font-size: 18px;
+    align-items: center;
 }
 /*-------------------Header-------------------*/
+
 
 
 
@@ -244,16 +244,13 @@ body {
 
     margin-top: 30px;
     display: flex;
-
 }
 
 
 
 .info p {
-
     margin-top: 10px;
     margin-left: 5px;
-
 }
 
 
@@ -862,15 +859,53 @@ body {
 
 
 /****************************** Other Breakpoint******************************/
-@media all and ( max-width: 685px) {
-    /*-- header --*/
-    
 
+@media all and ( max-width: 685px) {
+
+/*-- Header --*/
+
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .menu ul {
+        position: relative;
+        padding-left: 0px;
+        width: 650px;
+        border: solid 2px blue;
+        top: 100px;
+        right: 200px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .sign-up {
+        position: absolute;
+        border: solid 2px red;
+        right: 45px;
+        top: 30px;
+    }
+
+    .menu-items {
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 20px;
+    }
+
+    .menu-items:hover {
+        border-bottom-color: #0065FC;
+    }
         
 /*-- Main --*/
     
     .main {
         padding-top: 55px;
+    }
+
+/*-- Trouvez votre hébergement --*/
+
+    .catchphrase h1 {
+        margin-top: 50px;
     }
 }
 
@@ -921,6 +956,10 @@ body {
         padding-right: 26px;
     }
 
+    .popular h2 {
+        font-size: 22px;
+    }
+
     .popularpic {
         width: 55%;
     }
@@ -942,7 +981,8 @@ body {
 
 
     .resultscontainer h2 {
-        padding-left: 50px;
+        padding-left: 120px;
+        font-size: 22px;
     }
     
     .cardlink-lodging {
@@ -959,6 +999,12 @@ body {
 .activitylink {
     width: 125%;
 }
+
+.activities h2 {
+    font-size: 22px;
+}
+
+
 
 
 /****************************** Iphone Breakpoint******************************/
@@ -992,8 +1038,8 @@ body {
     }
 
     .resultscontainer h2 {
-        padding-left: 80px;
-        font-size: 18px;
+        padding-left: 60px;
+        font-size: 20px;
     }
 
     .maincard {
@@ -1013,6 +1059,14 @@ body {
         font-size: 14px;
     }
 
+    .cardlink-lodging {
+    height: 200px;
+    }
+
+    .loadmore {
+        padding-left: 55px;
+    }
+
 /*-- Populaire --*/
 
     .cardcontainer {
@@ -1024,7 +1078,7 @@ body {
 
     .popular h2 {
         padding-left: 25px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .popular .fa-chart-line {
@@ -1039,6 +1093,10 @@ body {
         padding-left: 0px;
         padding-right: 0px;
         margin-bottom: 0px;
+    }
+
+    .activities h2 {
+        font-size: 20px;
     }
 }
 /****************************** FIN ******************************/
