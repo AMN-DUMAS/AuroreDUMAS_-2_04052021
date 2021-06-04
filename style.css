@@ -1,3 +1,8 @@
+html,
+body {
+    overflow-x: hidden;
+    position:relative;
+} 
 
 body {
     margin: 0;
@@ -860,79 +865,7 @@ body {
 @media all and ( max-width: 685px) {
     /*-- header --*/
     
-    .header {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
 
-    .header div {
-        border: solid 3px red;
-        width: 450px;
-    }
-    
-    .header img {
-        margin-left: 0px;
-        margin-right: 0px
-    }
-
-    .menu {
-        margin-right: 0px;
-        margin-left:300px;
-        
-    }
-
-    .menu nav {
-        position: relative;
-        flex-basis: 100%;
-        order: 2;
-        display: flex;
-        border:solid 5px hotpink;
-    }
-
-    .menu ul {
-        display: flex;
-        order: 2;
-        position: relative;
-        top: 50px;
-        right: 450px;
-        padding-top: 30px;    
-        padding-left: 0px;
-        margin-left: 50px;
-        border: solid 2px greenyellow;
-        width: 450px
-    }
-    
-    .menu li {
-        margin-right: 0px;
-    }
-
-    .menu-items {
-        display: flex;
-        justify-content: space-evenly;
-        border-bottom: 3px solid #f2f2f2;
-        padding-bottom: 20px;
-        padding-right: 100px;
-    }
-
-    .menu-items:hover {
-        border-bottom-color: #0065FC;
-    }
-
-
-    .sign-up {
-        position: absolute;
-        padding-top: 0px;
-        margin-top: 40px;
-        margin-right: 0px;
-        padding-left: 5px;
-        color: #0065fc;
-        text-decoration: none;
-        width: 165px;
-        right: 45px;
-        margin-right: 80px;
-        width:80px        
-    }
         
 /*-- Main --*/
     
