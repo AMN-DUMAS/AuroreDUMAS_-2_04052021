@@ -871,7 +871,7 @@ body {
 /*-- Header --*/
 
 .header img {
-    padding: 0 !important;
+    padding: 0;
 }
 
 .header {
@@ -884,16 +884,11 @@ body {
     margin-left: 40px;
 }
 
-
-.menu {
-    padding-right: 30px;
-}
-
-
 .menu {
     flex-basis: 100%;
     order: 2;
     display: flex;
+    padding-right: 22px;
 }
 
 .menu li {
@@ -909,8 +904,8 @@ body {
     border-bottom: 3px solid #f2f2f2;
 }
 
-.menu ul .item1 {
-    padding-left: 12px;
+.menu ul .item2 {
+    padding-right: 12px;
 }
 
 .menu ul .item1 a, .menu ul .item2 a {
@@ -942,12 +937,15 @@ body {
 
 .header .menu {
     position: relative;
+    margin-right: 10px;
 }
 
 .header .menu p {
     position: absolute;
-    top: -65px;
+    top: -65px; 
+    margin-right: 40px;   
 }
+
         
 /*-- Main --*/
     
