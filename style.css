@@ -255,14 +255,14 @@ body {
 
 
 .info p {
-    margin-top: 10px;
+    margin-top: 8px;
     margin-left: 5px;
 }
 
 
 .fa-info {
-    height: 30px;
-    width: 35px;
+    height: 25px;
+    width: 30px;
     border: 2px solid #f2f2f2;
     color: #0065FC;
     border-radius: 50px;
@@ -271,11 +271,10 @@ body {
     padding-top: 5px;
     margin-right: 12px;
     text-align: center;
+    min-width: 30px;
 }
 
-.fa-info::before {
-    line-height: 1.5;
-}
+
 
 /* -------------------Filtres-------------------*/
 /*------------------- Section 1 - Fin - Trouver votre hébergement-------------------*/
@@ -943,7 +942,7 @@ body {
 .header .menu p {
     position: absolute;
     top: -65px; 
-    margin-right: 40px;   
+    margin-right: 70px;   
 }
 
         
@@ -959,13 +958,13 @@ body {
         margin-top: 50px;
     }
 
-    .fa-info {
-        display: flex;
-        flex-wrap: wrap;
+
+/*-- Hébergement --*/
+
+    .resultscontainer h2 {
+        padding-left: 60px;
     }
 }
-
-
 
 /****************************** Bootstrap Breakpoint******************************/
 @media all and ( max-width: 576px) {
@@ -1037,7 +1036,7 @@ body {
 
 
     .resultscontainer h2 {
-        padding-left: 120px;
+        padding-left: 30px;
         font-size: 22px;
     }
     
@@ -1051,16 +1050,16 @@ body {
     
     
 /*-- Activités--*/
-    
-.activitylink {
-    width: 125%;
+        
+    .activitylink {
+        width: 125%;
+    }
+
+    .activities h2 {
+        font-size: 22px;
+    }
+
 }
-
-.activities h2 {
-    font-size: 22px;
-}
-
-
 
 
 /****************************** Iphone Breakpoint******************************/
@@ -1080,8 +1079,14 @@ body {
     
 
 /*-- Filtres --*/
+
+    .search-filter {
+        width: 250px;
+    }
+
     .search-filter p {
-        font-size: 16px;
+        font-size: 14px;
+        margin-top: 3px
     }
 
 
@@ -1091,6 +1096,8 @@ body {
     .resultscontainer {
         padding-left: 0px;
         padding-right: 15px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     .resultscontainer h2 {
