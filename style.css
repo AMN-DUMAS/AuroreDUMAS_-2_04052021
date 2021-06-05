@@ -1065,7 +1065,15 @@ body {
 /****************************** Iphone Breakpoint******************************/
 @media all and ( max-width: 375px) {
 
+    /*-- Trouver Hébergement --*/
 
+    .header img {
+        margin-left: 55px;
+    }
+
+    .header .menu p {
+        margin-right: 80px;
+    }
 
 /*-- Trouver Hébergement --*/
 
